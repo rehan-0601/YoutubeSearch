@@ -18,7 +18,7 @@ class SearchBar extends Component {
 	//for  a normal js class render: function(){}. but here its a bit diff
 	//must return some jsx
 
-	//to acess any js variables wrap in  {}
+	//to access any js variables wrap in  {}
 	// to handle events 1.write eventhandler 2.tell ur elem to run it
 
 	//for a controlled component, the value the component shows comes from it
@@ -27,10 +27,10 @@ class SearchBar extends Component {
 	// the new state and shows the new state as value of component
 	render() {
 		return (
-			<div>
+			<div className="search-bar">
 				<input
 					value = {this.state.term}
-					onChange={(event) => this.setState({ term: event.target.value })} />
+					onChange={(event) => this.onInputChange(event.target.value)} />
 			</div>
 		);
 	}
@@ -38,6 +38,10 @@ class SearchBar extends Component {
 	// onInputChange(event) {
 	// 	console.log(event.target.value);
 	// }
+	onInputChange(term) {
+		this.setState({term});
+		this.props.onSearchTermChange(term);
+	}
 }
 
 export default SearchBar;
