@@ -1,25 +1,14 @@
-# ReduxSimpleStarter
+# Youtube Search
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+Interactive Youtube Search implemented in React. As the user types in the search term, a debounced debounced youtube request fetches new results and displays the result in the video list.
+Clicking any video from the list, loads the video in the iframe in the videodetail component.
 
 ### Getting Started
 
-There are two methods for getting started with this repo.
-
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
-
 ```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
+> git clone https://github.com/rehan-0601/YoutubeSearch.git
+> cd YoutubeSearch
 > npm install
 > npm start
 ```
 
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-> npm install
-> npm start
-```
